@@ -1,3 +1,1 @@
- Starter project to build your first website.  
-Scaler Academy, Build a website Workshop
-https://www.scaler.com
+This is my personal website made with HTML,CSS,javascript. Can check on tanishqgandhi.me
