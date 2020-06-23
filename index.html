@@ -62,7 +62,7 @@
                 /* fallback for old browsers */
                 background: -webkit-linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));
                 /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right, rgba(255, 0, 0, 0.6), rgba(0, 0, 255, 0.6));
+                background: linear-gradient(to right, rgba(231, 170, 216, 0.555), rgba(6, 80, 241, 0.582));
                 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             }
 
@@ -121,9 +121,14 @@
 .boxed {
   background-color: lightgrey;
   width: auto;
-  border: 5px solid red;
+  border: 5px solid black;
   padding: 25px;
   margin: 20px;
+}
+.boxed1 {
+    background-color: white;
+   width: auto;
+   border: 2px solid black;
 }
 
         </style>
@@ -148,10 +153,10 @@
                             <a class="nav-link" href="#gallery" data-offset="90">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#testimonials" data-offset="30">Testimonials</a>
+                            <a class="nav-link" href="#articles" data-offset="90">Blogs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#articles" data-offset="90">Blogs</a>
+                            <a class="nav-link" href="#testimonials" data-offset="30">Testimonials</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact" data-offset="90">Contact</a>
@@ -182,9 +187,9 @@
                     <div class="row wow fadeIn">
                         <!--Grid column-->
                         <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
-                            <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5 animated bounceInUp">Tanishq Gandhi</h3>
+                            <h3 class="display-3 font-weight-bold text-body mb-0 pt-md-5 pt-5 animated bounceInUp">Tanishq Gandhi</h3>
                             <hr class="hr-light my-4 w-75">
-                            <h4 class="subtext-header mt-2 mb-4">The word <b>Tanishq</b> means Diamonds. Wherever it goes it leaves                                         its impression.</h4>
+                            <h4 class="subtext-header text-body mt-2 mb-4">The word <b>Tanishq</b> means Diamonds. Wherever it goes it leaves                                         its impression.</h4>
                             <a href="#!" class="btn btn-rounded btn-outline-white">
                                 <i class="fa fa-home"></i> Checkout
                             </a>
@@ -222,7 +227,7 @@
 
                     <!-- Grid column -->
                     <div class="col-lg-5 text-center text-lg-left">
-                        <img class="img-fluid" src="assets/images/myname.jpg" alt="My image">
+                        <img class="img-fluid" src="assets/images/my.jpg" alt="My image" style="border-radius: 50%">
                     </div>
                     <!-- Grid column -->
 
@@ -439,58 +444,6 @@ function showDivs(n) {
 </section>
 <!--Section: gallery-->
 
-<!--Section: testimonials-->
-<section id="testimonials" class="text-center py-5" style="background-color: #C0C0C0;">
-    <div class="progress">
-  <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
-</div>
-
-    <!-- Container -->
-    <div class="container">
-
-        <!-- Section heading -->
-        <h2 class="h1-responsive font-weight-bold mb-5 boxed" style="font-size: 350%">Testimonials</h2>
-
-        <!-- Carousel Wrapper -->
-        <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade"
-        data-ride="carousel" data-interval="false">
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
-            <!--First slide-->
-            <div class="carousel-item active">
-                <div class="testimonial">
-                    <!--Avatar-->
-                    <div class="avatar mx-auto mb-4">
-                        <img src="assets/images/bill gates.jpg" class="rounded-circle img-fluid"
-                        alt="First sample avatar image">
-                    </div>
-                    <!--Content-->
-                    <p>
-                        <i class="fa fa-quote-left"></i> Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains..
-                    </p>
-                    <h4 class="font-weight-bold">Bill Gates</h4>
-                    <h6 class="font-weight-bold my-3">Co-Chairman, Bill & Melinda Gates Foundation, Co-Founder, Microsoft</h6>
-                    <!--Review-->
-                    <i class="fa fa-star amber-text"> </i>
-                    <i class="fa fa-star amber-text"> </i>
-                    <i class="fa fa-star amber-text"> </i>
-                    <i class="fa fa-star amber-text"> </i>
-                    <i class="fa fa-star-half-full amber-text"> </i>
-                </div>
-            </div>
-            
-            
-            
-        </div>
-<!--Controls-->
-</div>
-<!-- Carousel Wrapper -->
-
-</div>
-<!-- Container -->
-
-</section>
-<!--Section: testimonials-->
 
 <!--Section: call to action-->
 <div class="streak streak-md streak-photo" style="background-image:url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img(115).jpg')">
@@ -510,7 +463,7 @@ function showDivs(n) {
 <!--Section: call to action-->
 
 <!--Section: articles-->
-<section id="articles" class="text-center py-5">
+<section id="articles" class="text-center py-5" style="background-color: #C0C0C0;">
     <div class="progress">
   <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
 </div>
@@ -638,6 +591,59 @@ Every JavaScript Developer Should Know</h4>
 </section>
 <!--Section: articles-->
 
+<!--Section: testimonials-->
+<section id="testimonials" class="text-center py-5">
+    <div class="progress">
+  <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+</div>
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold mb-5 boxed" style="font-size: 350%">Testimonials</h2>
+
+        <!-- Carousel Wrapper -->
+        <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade"
+        data-ride="carousel" data-interval="false">
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto mb-4">
+                        <img src="assets/images/bill gates.jpg" class="rounded-circle img-fluid"
+                        alt="First sample avatar image" style="width: 45%;">
+                    </div>
+                    <!--Content-->
+                    <p>
+                        <i class="fa fa-quote-left"></i> Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains..
+                    </p>
+                    <h4 class="font-weight-bold">Bill Gates</h4>
+                    <h6 class="font-weight-bold my-3">Co-Chairman, Bill & Melinda Gates Foundation, Co-Founder, Microsoft</h6>
+                    <!--Review-->
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star-half-full amber-text"> </i>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+<!--Controls-->
+</div>
+<!-- Carousel Wrapper -->
+
+</div>
+<!-- Container -->
+
+</section>
+<!--Section: testimonials-->
+
 <!--Section: contact-->
 <section id="contact" class="py-5" style="background-color: #C0C0C0;">
     <div class="progress">
@@ -655,7 +661,7 @@ Every JavaScript Developer Should Know</h4>
         <div class="row">
 
             <!-- Grid column -->
-            <div class="col-md-9 mb-md-0 mb-5">
+            <div class="col-md-9 mb-md-0 mb-5 boxed1">
 
                 <form action="mailto:tangandhi19@gmail.com" method="post" enctype="text/plain">
 
@@ -726,7 +732,7 @@ Every JavaScript Developer Should Know</h4>
 
             <!-- Grid column -->
             <div class="col-md-3 text-center">
-                <ul class="list-unstyled mb-0">
+                <ul class="list-unstyled mb-0 boxed1">
                     <li>
                         <a href="https://goo.gl/maps/SSjFjzty2tSvRZPk6"><i class="fa fa-map-marker fa-2x purple-text"></i></a>
                         <p>VIT Vellore</p>
